@@ -15,7 +15,8 @@
         <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block">Alexander Pierce</a>
+        <a href="#" class="d-block">222102531 </a>
+        <a href="#" class="d-block">FERDINANDUS ALFREDO ARDO</a>
       </div>
     </div>
 
@@ -46,19 +47,22 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="['/dashboard']" routerLinkActive="router-link-active" class="nav-link {{ moduleName == 'dashboard' ? 'active' : '' }}'>
+              <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active"
+                class="nav-link {{ moduleName == 'dashboard' ? 'active' : ''}}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Dashboard v1</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="['/dashboard2']" routerLinkActive="router-link-active" class="nav-link{{ moduleName == 'dashboard2' ? 'active' : '' }}'>
+              <a [routerLink]="['/dashboard2']" routerLinkActive="router-link-active"
+                class="nav-link {{ moduleName == 'dashboard2' ? 'active' : ''}}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Dashboard v2</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="./index3.html" class="nav-link">
+              <a [routerLink]="['/dashboard3']" routerLinkActive="router-link-active"
+                class="nav-link {{ moduleName == 'dashboard3' ? 'active' : ''}}">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Dashboard v3</p>
               </a>
@@ -672,4 +676,3 @@
     <!-- /.sidebar-menu -->
   </div>
   <!-- /.sidebar -->
-</aside>
